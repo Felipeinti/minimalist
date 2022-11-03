@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Matt-Portfolio</title>
+    <meta name="description" content="Personal portfolio to showcase my projects">
+    <meta name="author" content="Mateo Terreni">
+
+    <!-- Mobile-friendly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Minimalist CSS -->
+    <link rel="stylesheet" href="assets/css/minimalist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+    <script rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <style>
+		body {
+			padding-top: 0;
+			background: rgb(51, 40, 112);
+			background: #e4eef7;
+		}
+
+		.linkButtons {
+			display: flex !important;
+			flex-direction: column;
+			height: 100%;
+			width: 100%;
+			justify-content: space-evenly;
+		}
+
+		.linkButton {
+			width: 94px;
+		}
+
+		.projectLink {
+			display: block;
+			display: flex;
+			justify-content: center;
+		}
+
+		.column {
+			margin-top: 0 !important;
+		}
+
+		.column > * {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		.ui.card {
+			box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.75);
+		}
+
+		.navbar {
+			display: flex;
+			justify-content: flex-end;
+			padding: 20px 40px;
+		}
+
+		.navbar-link {
+			margin-right: 20px;
+		}
+
+		.navbar-link-image {
+			width: 50px;
+			height: 50px;
+			filter: grayscale(100%);
+			opacity: 0.2;
+			transition-duration: 0.6s;
+		}
+
+		.navbar-link-image:hover {
+			opacity: 1;
+			filter: none;
+		}
+
+	</style>	  
+
+  </head>
+  <body>
+    <!-- User info -->
+    <header>
+      <div class="container">
+        <div class="row justify-content-lg-center">
+          <div class="col-lg-2 text-center">
+            <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.15752-9/313716275_1256179631780449_9193061140677537444_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=LyMm-xUaVh0AX9GCGSr&_nc_ht=scontent-cdt1-1.xx&oh=03_AdTns-G4xrICgnNuiRYuSPfhD_vqE8NHAxojP7uYgs6Xhw&oe=63873E2C" class="user-image rounded-circle" alt="Name Surname">
+          </div>
+          <div class="col-lg-7">
+            <h2>Mateo Terreni</h2>
+            <p class="text-justify">
+              I´m a Software developper with a great passion for learning and practicing in Machine Learning, Big Data and Statistics. I have worked with various domains of data and in different work environments. I´m a teamplayer and I try to learn as fast as I can so to be able to face any kind of situation.
+            </p>
+            <ul class="list-inline text-lg-right social-icons">
+              <li class="list-inline-item"><a href="https://github.com/Bubbuka" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/mateo-terreni-7534b4255" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li class="list-inline-item"><a href="mailto: mateoterreni@gmail.com" target="_blank"><i class="fas fa-at"></i></a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Content -->
+    <section>
+      <!-- ./content-switch -->
+      <div class="d-flex justify-content-center">
+        <div class="list-group list-group-horizontal-md" id="content-tabs" role="tablist">
+          <a class="list-group-item small text-uppercase active" id="list-experience-list" data-toggle="list" href="#experience" role="tab">Experience</a>
+          <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#projects" role="tab">Projects</a>
+        </div>
+      </div>
+      <!-- ./content-switch -->
+      <!-- ./content-body -->
+      <div class="container pt-5 tab-content">
+        <!-- ./experience-panel-->
+        <div class="tab-pane fade show active" id="experience" role="tabpanel">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg">
+              <!-- Timeline -->
+              <div class="timeline-container">
+                <div class="timeline-block timeline-block-right">
+                  <div class="marker"></div>
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">Experience</h3>
+                    <span class="timeline-span">Free lance data analyst/ ML developer</span>
+                    <p class="text-muted small mb-3">2021-2022</p>
+                    <p class="timeline-p text-justify">I´ve done some one off and ongoing work for a political consultant firm as a data analyst training regression models and done some development projects for a small scale restaurant chain. </p>
+                  </div>
+                </div>
+            
+                <div class="timeline-block timeline-block-left">
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">Skills</h3>
+                    <span class="timeline-span">As Data Analyst/ ML developer</span>
+                    <p class="text-muted small mb-3">Data Wrangling</p>
+                    <p class="timeline-p text-justify">Using Pandas, Numpy, NLTK</p>
+		    <p class="text-muted small mb-3">Data Visualisation</p>
+		    <p class="timeline-p text-justify">Using Matplotlib, Plotly</p>
+                  </div>
+                  <div class="marker"></div>
+                </div>
+            
+                <div class="timeline-block timeline-block-right">
+                  <div class="marker"></div>
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">Third Year</h3>
+                    <span class="timeline-span">Some work experience</span>
+                    <p class="text-muted small mb-3">Experience Date</p>
+                    <p class="timeline-p text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                  </div>
+                </div>
+            
+                <div class="timeline-block timeline-block-left">
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">Fourth Year</h3>
+                    <span class="timeline-span">Some work experience</span>
+                    <p class="text-muted small mb-3">Experience Date</p>
+                    <p class="timeline-p text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                  </div>
+                  <div class="marker"></div>
+                </div>
+            
+                <div class="timeline-block timeline-block-right">
+                  <div class="marker"></div>
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">Fifth Year</h3>
+                    <span class="timeline-span">Some work experience</span>
+                    <p class="text-muted small mb-3">Experience Date</p>
+                    <p class="timeline-p text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- ./timeline -->
+            </div>
+          </div>
+        </div>
+        <!-- ./projects-panel-->
+        <div class="tab-pane fade show" id="projects" role="tabpanel">
+          <!-- TODO: Projects cards? Dunno. -->
+          <div class="row justify-content-lg-center">
+            <!-- ./project-1 -->
+            <div class="ui four column doubling stackable grid container">
+		<div class="column">
+                        <!-- Platform AI -->
+			<div class="ui card">
+				<div class="ui slide masked reveal image">
+					<img src="assets/giphy-downsized-large.gif" class="visible content" alt="PlatformAI preview">
+					<div class="hidden content linkButtons">
+						<a class="projectLink" href="https://github.com/Felipeinti/platformAI">
+							<button class="ui blue button linkButton">GitHub</button>
+						</a>
+						<a class="projectLink" href="https://www.youtube.com/watch?v=ExOb8yVXUqI&ab_channel=FelipeMaldonado">
+							<button class="ui blue button linkButton">Preview</button>
+						</a>
+					</div>
+				</div>
+				<div class="content">
+					<a class="header">Platform AI</a>
+					<div class="meta">
+						AI controlled Platformer
+					</div>
+				</div>
+				<div class="extra content">
+					<a>
+						<i class="tag icon"></i>
+						Python with Torch, Reinforcement Learning
+					</a>
+				</div>
+			</div>
+			
+
+			<!-- Snake -->
+			<div class="ui card">
+				<div class="ui slide masked reveal image">
+					<img src="assets/snake.png" class="visible content" alt="Snake project preview">
+					<div class="hidden content linkButtons">
+						<a class="projectLink" href="https://github.com/Bubbuka/Snake_JS">
+							<button class="ui blue button linkButton">GitHub</button>
+						</a>
+						<a class="projectLink" href="https://bubbuka.github.io/Snake_JS">
+							<button class="ui blue button linkButton">Preview</button>
+						</a>
+					</div>
+				</div>
+				<div class="content">
+					<a class="header">Snake</a>
+					<div class="meta">
+						Snake game written in JavaScript
+					</div>
+				</div>
+				<div class="extra content">
+					<a>
+						<i class="tag icon"></i>
+						HTML, CSS, JS, Games
+					</a>
+				</div>
+			</div>
+			<div class="ui card">
+				<div class="ui slide masked reveal image">
+					<img src="assets/screen-sentiment.png" class="visible content" alt="Sentiment preview">
+					<div class="hidden content linkButtons">
+						<a class="projectLink" href="https://github.com/Bubbuka/Sentiment-Analisys-Kaggle">
+							<button class="ui blue button linkButton">GitHub</button>
+						</a>
+						<a class="projectLink" href="https://www.kaggle.com/code/felipeintimaldonado/sentiment-analysis-0-78-accuracy-score/">
+							<button class="ui blue button linkButton">Preview</button>
+						</a>
+					</div>
+				</div>
+				<div class="content">
+					<a class="header">Sentiment Analysis</a>
+					<div class="meta">
+						Sentiment Analysis with python
+					</div>
+				</div>
+
+            <!-- Force next columns to break to new line -->
+            <div class="w-10"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container text-center">
+        <p class="small">
+          <a href="https://github.com/imgios/minimalist" target="_blank">minimalist</a> built with 🖤 and <a href="https://getbootstrap.com/" target="_blank">bootstrap</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
